@@ -1,6 +1,6 @@
 ###############  Attrition Prediction ############################
 
-# For Verizon, Telstra and HERE's Hyderabad and Chennai location # 
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx # 
 
 ##################################################################
 if(!require(shiny))
@@ -89,7 +89,7 @@ shinyApp(
           Truth$Graduate<-factor(as.character(Truth$Graduate),levels=c("N","Others" ,"Y" ))
           Truth$Marital.Status<-factor(as.character(Truth$Marital.Status),levels=c("Married" , "Single & Others"))
           Truth$Hired.for.Voice.or.Non.Voice.or.Both<-factor(as.character(Truth$Hired.for.Voice.or.Non.Voice.or.Both),levels=c("Non-Voice","Voice"  ))
-          Truth$Account.Name<-factor(as.character(Truth$Account.Name),levels=c("Bell Canada" ,"Netgear" ,"Verizon"))
+          Truth$Account.Name<-factor(as.character(Truth$Account.Name),levels=c("A1" ,"A2" ,"A3"))
           Truth$Band<-factor(as.character(Truth$Band),levels=c("U1","U2"))
           Truth$MOJ<-factor(as.character(Truth$MOJ),levels=c("M1", "M10","M11","M12","M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9" ))
           Truth$CTC.Hired.At <- as.numeric(Truth$CTC.Hired.At)
@@ -117,12 +117,6 @@ shinyApp(
              }),align = "center",style = "margin-top: 10%;margin-left: 30%"))})
   }
 )
-# input$file1 will be NULL initially. After the user selects
-# and uploads a file, it will be a data frame with 'name',
-# 'size', 'type', and 'datapath' columns. The 'datapath'
-# column will contain the local filenames where the data can
-# be found.  if (is.null(input$variable))
-
 
 
 
